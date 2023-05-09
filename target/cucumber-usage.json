@@ -1,0 +1,185 @@
+[
+  {
+    "source": "^user should able to list down the product name, INR Price, Offer of the available brand \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "user should able to list down the product name, INR Price, Offer of the available brand \"Sony\",\"JBL\",\"Marshall\"",
+        "aggregatedDurations": {
+          "average": 15.5979109,
+          "median": 15.5979109
+        },
+        "durations": [
+          {
+            "duration": 15.5979109,
+            "location": "snapdeal.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should verify the search landing page$",
+    "steps": [
+      {
+        "name": "user should verify the search landing page",
+        "aggregatedDurations": {
+          "average": 1.0354304,
+          "median": 1.0354304
+        },
+        "durations": [
+          {
+            "duration": 1.0354304,
+            "location": "snapdeal.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should able to verify the brand name price and offer of the selected product \"([^\"]*)\" or \"([^\"]*)\" or \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "user should able to verify the brand name price and offer of the selected product \"Sony\" or \"JBL\" or \"Marshall\"",
+        "aggregatedDurations": {
+          "average": 11.644599,
+          "median": 11.644599
+        },
+        "durations": [
+          {
+            "duration": 11.644599,
+            "location": "snapdeal.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should able select \"([^\"]*)\" facet$",
+    "steps": [
+      {
+        "name": "user should able select \"10 - 20\" facet",
+        "aggregatedDurations": {
+          "average": 5.7203495,
+          "median": 5.7203495
+        },
+        "durations": [
+          {
+            "duration": 5.7203495,
+            "location": "snapdeal.feature:13"
+          }
+        ]
+      },
+      {
+        "name": "user should able select \"Sony\" facet",
+        "aggregatedDurations": {
+          "average": 5.6116175,
+          "median": 5.6116175
+        },
+        "durations": [
+          {
+            "duration": 5.6116175,
+            "location": "snapdeal.feature:14"
+          }
+        ]
+      },
+      {
+        "name": "user should able select \"JBL\" facet",
+        "aggregatedDurations": {
+          "average": 5.585759,
+          "median": 5.585759
+        },
+        "durations": [
+          {
+            "duration": 5.585759,
+            "location": "snapdeal.feature:15"
+          }
+        ]
+      },
+      {
+        "name": "user should able select \"Marshall\" facet",
+        "aggregatedDurations": {
+          "average": 5.5249481,
+          "median": 5.5249481
+        },
+        "durations": [
+          {
+            "duration": 5.5249481,
+            "location": "snapdeal.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Launching the browser$",
+    "steps": [
+      {
+        "name": "Launching the browser",
+        "aggregatedDurations": {
+          "average": 7.2025642,
+          "median": 7.2025642
+        },
+        "durations": [
+          {
+            "duration": 7.2025642,
+            "location": "snapdeal.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user click on search button$",
+    "steps": [
+      {
+        "name": "user click on search button",
+        "aggregatedDurations": {
+          "average": 3.8773963,
+          "median": 3.8773963
+        },
+        "durations": [
+          {
+            "duration": 3.8773963,
+            "location": "snapdeal.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should able to enter \"([^\"]*)\" in search textbox$",
+    "steps": [
+      {
+        "name": "user should able to enter \"Noise Cancellation headphone\" in search textbox",
+        "aggregatedDurations": {
+          "average": 4.0919577,
+          "median": 4.0919577
+        },
+        "durations": [
+          {
+            "duration": 4.0919577,
+            "location": "snapdeal.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^close browser$",
+    "steps": [
+      {
+        "name": "close browser",
+        "aggregatedDurations": {
+          "average": 14.1540066,
+          "median": 14.1540066
+        },
+        "durations": [
+          {
+            "duration": 14.1540066,
+            "location": "snapdeal.feature:19"
+          }
+        ]
+      }
+    ]
+  }
+]

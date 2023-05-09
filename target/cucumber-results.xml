@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="80.046837">
+<testcase classname="Search and Verify Product Details" name="Verify that user should able to search product , apply filter and verify the details of the selected product - Using_Parameter" time="80.046837">
+<system-out><![CDATA[Given Launching the browser.................................................passed
+When user should able to enter "Noise Cancellation headphone" in search textbox.passed
+And user click on search button.............................................passed
+Then user should verify the search landing page.............................passed
+When user should able select "10 - 20" facet................................passed
+And user should able select "Sony" facet....................................passed
+And user should able select "JBL" facet.....................................passed
+And user should able select "Marshall" facet................................passed
+And user should able to list down the product name, INR Price, Offer of the available brand "Sony","JBL","Marshall".passed
+Then user should able to verify the brand name price and offer of the selected product "Sony" or "JBL" or "Marshall".passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

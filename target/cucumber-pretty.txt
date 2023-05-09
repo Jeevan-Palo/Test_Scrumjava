@@ -1,0 +1,19 @@
+@snapdeal
+Feature: Search and Verify Product Details
+
+  #--------------------------------  Scenario Flow 1 --------------------------------------------------#
+  Background:                   # snapdeal.feature:5
+    Given Launching the browser # CommonSteps.launching_the_browser()
+
+  @Using_Parameter
+  Scenario: Verify that user should able to search product , apply filter and verify the details of the selected product - Using_Parameter # snapdeal.feature:9
+    When user should able to enter "Noise Cancellation headphone" in search textbox                                                        # SearchProduct.user_should_able_to_enter_in_search_textbox(String)
+    And user click on search button                                                                                                        # SearchProduct.user_click_on_search_button()
+    Then user should verify the search landing page                                                                                        # SearchProduct.user_should_verify_the_search_landing_page()
+    When user should able select "10 - 20" facet                                                                                           # SearchProduct.user_should_able_select_facet(String)
+    And user should able select "Sony" facet                                                                                               # SearchProduct.user_should_able_select_facet(String)
+    And user should able select "JBL" facet                                                                                                # SearchProduct.user_should_able_select_facet(String)
+    And user should able select "Marshall" facet                                                                                           # SearchProduct.user_should_able_select_facet(String)
+    And user should able to list down the product name, INR Price, Offer of the available brand "Sony","JBL","Marshall"                    # SearchProduct.user_should_able_to_list_down_the_product_name_INR_Price_Offer_of_the_available_brand(String,String,String)
+    Then user should able to verify the brand name price and offer of the selected product "Sony" or "JBL" or "Marshall"                   # SearchProduct.user_should_able_to_verify_the_brand_name_price_and_offer_of_the_selected_product_or_or(String,String,String)
+    And close browser                                                                                                                      # CommonSteps.close_browser()

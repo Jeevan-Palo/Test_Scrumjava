@@ -1,0 +1,62 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+.passed_description {background-color:#D0FFD0;font-weight:bold;font-style:italic;color:black}
+.failed_description {background-color:#FFA898;font-weight:bold;font-style:italic;color:black}
+.comment {font-family:courier;font-weight:normal;font-size:small;color:black;border:1px dashed black;background-color:silver}
+.tip {font-family:courier;font-weight:normal;font-size:small;color:white;background-color:black}
+OL { counter-reset: item }
+OL>LI { display: block }
+OL>LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: __PAGESIZE__;
+     @top-center {
+     	content: "Detailed Results Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+ol a::after {
+  content: leader('.') target-counter(attr(href), page);
+}
+</style>
+<title>Detailed Results Report</title>
+  </head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+  <h1>Overview</h1>
+<table><tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>%Passed</th></tr><tr><th>Features</th><td class="passed">1</td><td class="failed">0</td><td class="known">0</td><td class="undefined">0</td><td>100.00</td></tr><tr><th>Scenarios</th><td class="passed">1</td><td class="failed">0</td><td class="known">0</td><td class="undefined">0</td><td>100.00</td></tr><tr><th>Steps</th><td class="passed">19</td><td class="failed">0</td><td class="known">0</td><td class="undefined">0</td><td>100.00</td></tr></table><div><b>Overall Duration: 0h 13m 49s</b></div>
+<a id="top"></a><h1>Table of Contents</h1><ol><li> <span class="passed"><a href="#feature-2mob-onetimepayment">Mob_OneTimePayment</a></span><ol><li> <span class="passed"><a href="#sc-8-mob-onetimepayment;verify-the-ability-of--authenticate-user-to-view-invoice-screen">Verify the ability of  authenticate user to view invoice screen</a></span></li></ol></li></ol><h1>Detailed Results Report</h1><table width="700px"><tr class="passed"><td colspan="4"><b>Feature:</b> <a id="feature-2mob-onetimepayment">Mob_OneTimePayment</a></td></tr><tr class="passed"><td><small><b>Passed:</b> 1</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 829.84s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td colspan="4"><b>Scenario:</b> <a id="sc-8-mob-onetimepayment;verify-the-ability-of--authenticate-user-to-view-invoice-screen">Verify the ability of  authenticate user to view invoice screen</a></td></tr><tr class="passed"><td><small><b>Passed:</b> 19</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 829.84s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td><b>Given </b> launch site in mobile chrome</td><td width="100">23.83s</td></tr><tr class="passed"><td><b>When </b> user navigates to make payment screen _ mb</td><td width="100">55.27s</td></tr><tr class="passed"><td style="padding-left:20px" colspan="2"><table><tr><td>userName</td><td>password</td></tr><tr><td>sharachel+taylor@gmail.com</td><td>Magellan2!</td></tr></table></td></tr><tr class="passed"><td><b>And </b> authenticate user navigates to view invoice screen</td><td width="100">1.16s</td></tr><tr class="passed"><td><b>Then </b> verify the view invoice Header</td><td width="100">2.07s</td></tr><tr class="passed"><td><b>And </b> verify all expected elements displayed in view invoice screen</td><td width="100">7.17s</td></tr><tr class="passed"><td><b>And </b> Click six month filter button in invoice screen</td><td width="100">2.69s</td></tr><tr class="passed"><td><b>Then </b> verify last six month invoices are displayed</td><td width="100">0.32s</td></tr><tr class="passed"><td><b>And </b> verify that the invoices are displayed in descending order</td><td width="100">0.30s</td></tr><tr class="passed"><td><b>And </b> verify all the invoices have the data in Billing Period column</td><td width="100">0.24s</td></tr><tr class="passed"><td><b>Then </b> verify all the invoices have the data in Amount column</td><td width="100">122.29s</td></tr><tr class="passed"><td><b>Then </b> verify that invoice amount displayed with dollar symbol</td><td width="100">122.20s</td></tr><tr class="passed"><td><b>And </b> Click twelve month filter button in invoice screen</td><td width="100">2.83s</td></tr><tr class="passed"><td><b>And </b> verify last twelve month invoices are displayed</td><td width="100">0.25s</td></tr><tr class="passed"><td><b>And </b> verify that the invoices are displayed in descending order</td><td width="100">0.22s</td></tr><tr class="passed"><td><b>Then </b> verify all the invoices have the data in Billing Period column</td><td width="100">0.30s</td></tr><tr class="passed"><td><b>Then </b> verify all the invoices have the data in Amount column</td><td width="100">122.16s</td></tr><tr class="passed"><td><b>Then </b> verify that invoice amount displayed with dollar symbol</td><td width="100">122.34s</td></tr><tr class="passed"><td><b>And </b> verify alert message displayed for no invoice displayed</td><td width="100">0.14s</td></tr><tr class="passed"><td><b>And </b> verify all the invoices have download link</td><td width="100">244.06s</td></tr></table></td></tr><tr class="passed"><td>After</td><td colspan="2"></td><td width="100">0.00s</td></tr><tr class="passed"><td colspan="4"></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr></table></td></tr><tr><td colspan="5"></td></tr></table>
+	</body>
+</html>

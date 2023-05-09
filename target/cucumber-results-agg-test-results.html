@@ -1,0 +1,62 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+.passed_description {background-color:#D0FFD0;font-weight:bold;font-style:italic;color:black}
+.failed_description {background-color:#FFA898;font-weight:bold;font-style:italic;color:black}
+.comment {font-family:courier;font-weight:normal;font-size:small;color:black;border:1px dashed black;background-color:silver}
+.tip {font-family:courier;font-weight:normal;font-size:small;color:white;background-color:black}
+OL { counter-reset: item }
+OL>LI { display: block }
+OL>LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: __PAGESIZE__;
+     @top-center {
+     	content: "Detailed Results Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+ol a::after {
+  content: leader('.') target-counter(attr(href), page);
+}
+</style>
+<title>Detailed Results Report</title>
+  </head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+  <h1>Overview</h1>
+<table><tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>%Passed</th></tr><tr><th>Features</th><td class="passed">1</td><td class="failed">0</td><td class="known">0</td><td class="undefined">0</td><td>100.00</td></tr><tr><th>Scenarios</th><td class="passed">1</td><td class="failed">0</td><td class="known">0</td><td class="undefined">0</td><td>100.00</td></tr><tr><th>Steps</th><td class="passed">11</td><td class="failed">0</td><td class="known">0</td><td class="undefined">0</td><td>100.00</td></tr></table><div><b>Overall Duration: 0h 01m 20s</b></div>
+<a id="top"></a><h1>Table of Contents</h1><ol><li> <span class="passed"><a href="#feature-2search-and-verify-product-details">Search and Verify Product Details</a></span><ol><li> <span class="passed"><a href="#sc-9-search-and-verify-product-details;verify-that-user-should-able-to-search-product-,-apply-filter-and-verify-the-details-of-the-selected-product---using-parameter">Verify that user should able to search product , apply filter and verify the details of the selected product - Using_Parameter</a></span></li></ol></li></ol><h1>Detailed Results Report</h1><table width="700px"><tr class="passed"><td colspan="4"><b>Feature:</b> <a id="feature-2search-and-verify-product-details">Search and Verify Product Details</a></td></tr><tr class="passed"><td><small><b>Passed:</b> 1</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 80.04s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td colspan="4"><b>Background:</b> <a id="sc-null"></a></td></tr><tr class="passed"><td><small><b>Passed:</b> 1</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 7.20s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td><b>Given </b> Launching the browser</td><td width="100">7.20s</td></tr></table></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr><tr class="passed"><td colspan="4"><b>Scenario:</b> <a id="sc-9-search-and-verify-product-details;verify-that-user-should-able-to-search-product-,-apply-filter-and-verify-the-details-of-the-selected-product---using-parameter">Verify that user should able to search product , apply filter and verify the details of the selected product - Using_Parameter</a></td></tr><tr class="passed"><td><small><b>Passed:</b> 10</small></td><td><small><b>Failed:</b> 0</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 72.84s</small></td></tr><tr class="passed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="passed"><td><b>When </b> user should able to enter &quot;Noise Cancellation headphone&quot; in search textbox</td><td width="100">4.09s</td></tr><tr class="passed"><td><b>And </b> user click on search button</td><td width="100">3.88s</td></tr><tr class="passed"><td><b>Then </b> user should verify the search landing page</td><td width="100">1.04s</td></tr><tr class="passed"><td><b>When </b> user should able select &quot;10 - 20&quot; facet</td><td width="100">5.72s</td></tr><tr class="passed"><td><b>And </b> user should able select &quot;Sony&quot; facet</td><td width="100">5.61s</td></tr><tr class="passed"><td><b>And </b> user should able select &quot;JBL&quot; facet</td><td width="100">5.59s</td></tr><tr class="passed"><td><b>And </b> user should able select &quot;Marshall&quot; facet</td><td width="100">5.52s</td></tr><tr class="passed"><td><b>And </b> user should able to list down the product name, INR Price, Offer of the available brand &quot;Sony&quot;,&quot;JBL&quot;,&quot;Marshall&quot;</td><td width="100">15.60s</td></tr><tr class="passed"><td><b>Then </b> user should able to verify the brand name price and offer of the selected product &quot;Sony&quot; or &quot;JBL&quot; or &quot;Marshall&quot;</td><td width="100">11.64s</td></tr><tr class="passed"><td><b>And </b> close browser</td><td width="100">14.15s</td></tr></table></td></tr><tr class="passed"><td>After</td><td colspan="2"></td><td width="100">0.00s</td></tr><tr class="passed"><td colspan="4"></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr></table></td></tr><tr><td colspan="5"></td></tr></table>
+	</body>
+</html>
